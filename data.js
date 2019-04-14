@@ -1,4 +1,4 @@
-import * as fs from 'fs'
+import * as fs from 'fs';
 
 var user_data = fs.readFileSync('./userData.txt');
 var posts = fs.readFileSync('./posts.txt');
