@@ -6,7 +6,7 @@ var posts = fs.readFileSync('./posts.txt');
 function addToUserData (pFirstName, pLastName, pEmail, pPassword, pBirth) {
     nuser = {fname:pFirstName, lname:pLastName,emailLogin:pEmail, password:pPassword, birth:pBirth};
     nuser.push(nuser);
-    fs.appendFile('usersData.txt', nuser, function (err) {
+    fs.appendFile('./usersData.txt', nuser, function (err) {
         if (err) throw err;
         console.log('Saved!');
     });
@@ -15,7 +15,7 @@ function addToUserData (pFirstName, pLastName, pEmail, pPassword, pBirth) {
 function addToPosts (email, value, apr, time) {
     var npost = {emailLogin:email, ammount:value, rate:apr, nMonths:time};
     posts.push(npost);
-    fs.appendFile('posts.txt', npost, function (err) {
+    fs.appendFile('./posts.txt', npost, function (err) {
         if (err) throw err;
         console.log('Saved!');
     });

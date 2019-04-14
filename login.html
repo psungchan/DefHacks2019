@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="data.js"></script>
 </head>
 <body>
   <nav class="light-blue lighter-blue" role="navigation">
@@ -24,10 +25,10 @@
         <h5 class="header col s12 light">Continue your adventure into the soup</h5>
       </div>
 
-      <form name="myLogin" action="posts.html" onsubmit="return validateForm()" method="post">
+      <form name="myLogin" action="posts.html" onsubmit="return validateForm() && return validateUser(emailLogin, x)" method="post">
         <div class="card-panel white-text">
         <input type ="email" id="emailLogin" name="fname" placeholder="Email">
-        <input type ="text" placeholder="Password">
+        <input type ="text" id="x" placeholder="Password">
         </div>
         <input id="Submit-button" class="btn-large waves-effect waves-green-text" type="submit" value="Log in" style="display: block; margin: 0 auto;">
 
@@ -51,6 +52,16 @@ function validateForm() {
     return false;
   }
 } 
+
+function validateUser(email, x) {
+  for (x of user_data) {
+    if (x.myLogin == email && x.password == x) {
+        return true;
+    }
+  }
+  alert("Invalid usernme and password combination");
+  return false;
+}
 </script>
 
   </body>
