@@ -1,3 +1,25 @@
 .lighter-blue {
     background-color: #52b3d9 !important;
 }
+
+.greeen {
+    color: green;
+    font-size: 100px;
+    font-weight: bold
+}
+
+#dividerline {    
+    border-bottom: 1px solid black;
+}
+
+.btn-large {
+    height: 62px;
+    line-height: 54px;
+    font-size: 19px;
+    padding: 0 35px;
+  }
+
+.indeximg {
+    height: 50px;
+    width: 50px;
+}
