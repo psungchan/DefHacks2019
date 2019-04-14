@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>StoneSoupShare</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="data.js"></script>
+</head>
+<body>
+  <nav class="light-blue lighter-blue" role="navigation">
+ <div class="nav-wrapper container center">
+     <a id="logo-container" href = "index.html" class="brand-logo">StoneSoupShare</a>
+  </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h3 class="header center black-text">Add to the Bag</h3>
+
+      <form name="loan" action="posts.html" method="post">
+        <div class="card-panel white-text">
+        <input type ="number" id="ammount" name="Loan ammount" placeholder="Loan amount">
+        <input type ="text" id="aro" placeholder="Desired interest">
+        <input type ="text" id="period" placeholder="Desired period of payment">
+     </div>
+
+        <input id="Submit-button" class="btn-large waves-effect waves-green-text" type="submit" value="POST" style="display: block; margin: 0 auto;">
+
+      </form>
+
+      <br><br>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
