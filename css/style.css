@@ -1,3 +1,7 @@
 .lighter-blue {
     background-color: #52b3d9 !important;
 }
+#footer {
+    text-align: center; 
+    margin-top: 20px; 
+}

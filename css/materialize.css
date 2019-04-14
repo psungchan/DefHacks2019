@@ -4329,7 +4329,7 @@ nav .sidenav-trigger i {
 }
 
 nav .brand-logo {
-  position: absolute;
+  position: center;
   color: #fff;
   display: inline-block;
   font-size: 2.1rem;
