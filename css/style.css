@@ -1,7 +1,31 @@
 .lighter-blue {
     background-color: #52b3d9 !important;
 }
+<<<<<<< HEAD
 #footer {
     text-align: center; 
     margin-top: 20px; 
+=======
+
+.greeen {
+    color: green;
+    font-size: 100px;
+    font-weight: bold
+}
+
+#dividerline {    
+    border-bottom: 1px solid black;
+}
+
+.btn-large {
+    height: 62px;
+    line-height: 54px;
+    font-size: 19px;
+    padding: 0 35px;
+  }
+
+.indeximg {
+    height: 50px;
+    width: 50px;
+>>>>>>> 9eddce4eb424a4efe3f61fa504de8e66183c09d8
 }
