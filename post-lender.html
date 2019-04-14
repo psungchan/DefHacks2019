@@ -23,18 +23,22 @@
 <body>
 
 <h2>My Phonebook</h2>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
+<div class="row">
+   <div class="col s12 center"> 
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for loans.." title="Type in a name">
+    <div class="card-panel white-text">
 <ul id="myUL">
-  <li><a href="#">Lender1</a></li>
-  <li><a href="#">Lender2</a></li>
+  <li><a href="#">Loan: 5k</a></li>
+  <li><a href="#">Loan: 10k</a></li>
 
-  <li><a href="#">Lender3</a></li>
-  <li><a href="#">Lender4</a></li>
+  <li><a href="#">Loan: 2k</a></li>
+  <li><a href="#">Loan: 1k</a></li>
 
-  <li><a href="#">Lender5</a></li>
+  <li><a href="#">Loan: 50k</a></li>
 </ul>
+</div>
+</div>
+</div>
 
 <script>
 function myFunction() {
