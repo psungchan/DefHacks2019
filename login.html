@@ -24,13 +24,15 @@
         <h5 class="header col s12 light">Continue your adventure into the soup</h5>
       </div>
 
-<div class="card-panel white-text">
-        <input type ="text" placeholder="Email">
+      <form name="myLogin" action="posts.html" onsubmit="return validateForm()" method="post">
+        <div class="card-panel white-text">
+        <input type ="email" id="emailLogin" name="fname" placeholder="Email">
         <input type ="text" placeholder="Password">
-</div>
-      <div class="row center">
-        <a href="posts.html" id="logIn-button" class="btn-large waves-effect waves-green-text">log in</a>
-      </div>
+        </div>
+        <input id="Submit-button" class="btn-large waves-effect waves-green-text" type="submit" value="Log in" style="display: block; margin: 0 auto;">
+
+        </form>
+
       <br><br>
     </div>
   </div>
@@ -40,6 +42,16 @@
 
     <a href="signUp.html"><p>Don't have an account? Sign Up!</p></a>
 </div>
+
+<script>
+function validateForm() {
+  var x = document.forms["myLogin"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+} 
+</script>
 
   </body>
 </html>
