@@ -30,6 +30,9 @@
         <input type ="email" id="emailLogin" name="fname" placeholder="Email">
         <input type ="text" id="x" placeholder="Password">
         </div>
+
+        <div> <a href="snapchat.html"><p>Don't remember your login? Sign in with Snapchat!</p></a> </div>
+
         <input id="Submit-button" class="btn-large waves-effect waves-green-text" type="submit" value="Log in" style="display: block; margin: 0 auto;">
 
       </form>
@@ -48,7 +51,7 @@
 function validateForm() {
   var x = document.forms["myLogin"]["fname"].value;
   if (x == "") {
-    alert("Name must be filled out");
+    alert("Email must be filled out");
     return false;
   }
 } 
