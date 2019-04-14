@@ -1,0 +1,19 @@
+{
+  "name": "defhacks2019",
+  "version": "1.0.0",
+  "description": "Hackthon Def",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psungchan/DefHacks2019.git"
+  },
+  "author": "Soup Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psungchan/DefHacks2019/issues"
+  },
+  "homepage": "https://github.com/psungchan/DefHacks2019#readme"
+}
